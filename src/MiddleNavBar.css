@@ -1,0 +1,65 @@
+.middle-nav-bar {
+    position: relative;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .middle-nav-bar.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 800;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .middle-nav-content {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .middle-nav-items {
+    display: flex;
+    gap: 45px;
+    padding-left: 50px;
+  }
+  
+  .middle-nav-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .middle-nav-button {
+    display: none;
+    padding: 10px 55px;        /* Padding for the button */
+    background-color: #1179e9; /* Blue color */
+    color: white;
+    border: none;
+    border-radius: 5px;        /* Slightly rounded corners */
+    cursor: pointer;
+    font-size: 24px;           /* Font size */
+    text-align: center;        /* Center text */
+    /* width:300px; */
+    transition: background-color 0.3s ease;
+    padding-right: 100px;
+    margin-right: 62px;
+    padding-right: 55px;
+  }
+  
+  .middle-nav-bar.sticky .middle-nav-button {
+    display: block;
+  }
+  .middle-nav-button:hover {
+    background-color: #3c94f1; /* Darker blue on hover */
+  }
+  
+ 

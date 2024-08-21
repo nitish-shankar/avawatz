@@ -1,0 +1,36 @@
+.footer {
+    background-color: #0c0f70;
+    padding: 20px;
+    border-top: 1px solid #e1e1e1;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-column {
+    flex: 1;
+    padding: 10px;
+    min-width: 200px; /* Adjust as necessary */
+  }
+  
+  .footer-column .footer-h4 {
+    margin-top: 0;
+  }
+  
+  .footer-download-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .store-button {
+    margin: 0 10px;
+  }
+  
+  .store-button .footer-img {
+    width: 150px; /* Adjust size as necessary */
+  }
+  

@@ -1,0 +1,242 @@
+/* Basic styles for navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 190px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 11px;
+  position: relative; /* Ensure positioning context for dropdown */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navbar-logo {
+  height: 40px; /* Adjust as needed */
+}
+
+.navbar-search input {
+  padding: 0.5rem;
+  border-radius: 25px;
+  border: 2px solid black;
+  outline: none;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: rgb(231, 228, 228);
+}
+
+.navbar-items {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.navbar-toggle {
+  display: none; /* Hide by default */
+}
+
+.navbar-icons {
+  display: flex;
+  gap: 1rem; /* Space between buttons */
+}
+.navbar-btn {
+  font-size: 1rem; /* Adjust font size as needed */
+  cursor: pointer; /* Pointer cursor on hover */
+  background-color: #ffffff; /* Button background color */
+  color: rgb(0, 0, 0); /* Button text color */
+  border: none; /* Remove default border */
+  padding: 0.5rem 1rem; /* Button padding */
+  border-radius: 5px; /* Rounded corners */
+  display: flex; /* Align icon and text horizontally */
+  align-items: center; /* Center items vertically */
+  gap: 0.5rem; /* Space between icon and text */
+}
+
+.navbar-icon-list {
+  list-style: none; /* Remove default list styling */
+  display: flex; /* Display list items in a row */
+  gap: 1rem; /* Space between list items */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.navbar-icon-item {
+  font-size: 1.5rem; /* Adjust font size as needed */
+  cursor: pointer; /* Pointer cursor on hover */
+  display: flex; /* Display items in flexbox */
+  align-items: center; /* Center items vertically */
+}
+
+.world-icon {
+  font-size: 1.5rem; /* Adjust icon size */
+}
+
+
+.navbar-dropdown {
+  position: relative;
+}
+
+/* Button styling */
+.dropdown-btn {
+  padding: 0.5rem 1rem;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+/* Dropdown content styling */
+.dropdown-content {
+  position: fixed; /* Change to fixed positioning */
+  top: 20;
+  left: 0;
+  width: 100vw; /* Full width of the viewport */
+  height: 50vh; /* Full height of the viewport */
+  background-color: white;
+  color: black;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 2rem; /* Adjust padding as needed */
+  display: flex;
+  flex-direction: row;
+  z-index: 1000; /* Ensure it's above other content */
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+
+/* Show dropdown content on hover or button click */
+.navbar-dropdown:hover .dropdown-content, 
+.navbar-dropdown.active .dropdown-content {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Column styling */
+.dropdown-column {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+.dropdown-column h3 {
+  margin-top: 0;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 0.5rem 0;
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0 20px;
+  }
+  .navbar-items {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  .navbar-items {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    display: none; /* Hide menu items by default on small screens */
+  }
+  .navbar-items.open {
+    display: flex; /* Show menu items when toggled */
+  }
+  .navbar-toggle {
+    display: block; /* Show toggle button on small screens */
+  }
+  .navbar-search, .navbar-icons {
+    margin: 1rem 0;
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-icons {
+    gap: 0.5rem;
+  }
+  .navbar-dropdown {
+    width: 100%;
+  }
+  .dropdown-content {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+/* navbar US options start */
+
+/* Dropdown styling for the US button */
+.navbar-dropdown-us {
+  position: relative;
+}
+
+.dropdown-btn-us {
+  padding: 0.5rem 1rem;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Dropdown content for US button */
+.dropdown-content-us {
+  position: absolute; /* Change to absolute positioning */
+  top: 100%; /* Position it below the button */
+  right: 0; /* Align to the right */
+  width: 150px; /* Adjust width as needed */
+  background-color: white;
+  color: black;
+  box-shadow: 0px 8px 16px rgba(197, 197, 197, 0.2);
+  padding: 1rem;
+  display: none; /* Hide by default */
+  z-index: 1000;
+    transition: background-color 0.5s ease; /* Smooth transition for background color */
+
+}
+
+/* Show dropdown content on hover or button click */
+.navbar-dropdown-us:hover .dropdown-content-us,
+.navbar-dropdown-us.active .dropdown-content-us {
+  display: block;
+}
+
+.dropdown-content-us a {
+  display: block;
+  padding: 0.5rem 0;
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown-content-us a:hover {
+  background-color: #ddd;
+}
+
+/* navbar-US option end */
