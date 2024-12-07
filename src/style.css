@@ -1,0 +1,522 @@
+.center-div{
+  align-items: center; /* Align items vertically in the center */
+  /* padding-top: 80px; */
+  position: relative;
+   /* Create a positioning context */
+  text-align: center;
+   /* Center content inside */
+  display: flex;         
+      /* Use flexbox for alignment */
+  justify-content: center;
+}
+
+/* .center-content { */
+    /* padding-left: 190px;  */
+    /* Apply 190px padding to the left of the entire content */
+  /* } */
+.first-container {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    padding-top: 80px;
+  }
+  .top-icon {
+    margin-right: 10px; /* Add some space between the image and the heading */
+  }
+  .avawatz-heading {
+    font-size: 3.5rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif Haettenschweiler,  sans-serif ;
+    margin: 0; /* Remove default margin for the heading */
+  }
+
+  .first-subheading {
+    margin-top: 05px; /* Add space above the subheading */
+    font-size: 1.5rem;
+    font-family:'Times New Roman', Times, serif;
+    color :darkgray;
+    margin-left:0;
+    padding-left: 0;
+  }
+  
+ /*badges start*/ 
+ .badge-container {
+    display: flex;
+    gap: 1px;
+    flex-wrap: wrap;
+  }
+  
+  .badge {
+    display: flex;
+    align-items: center;
+    padding: 5px 6px;
+    border-radius: 5px;
+    font-size: 10px;
+    color: #fff;
+    margin: 0px 4px 4px 0px;
+    margin-top: 1px;
+    font-family:sans-serif;
+  }
+  
+  .badge.filled {
+    color: #000000;
+  }
+  
+  .badge.filled.yellow {
+    background-color: hsl(62, 73%, 67%);
+  }
+  
+  .badge.filled.orange {
+    background-color: 
+    RGB(255, 196, 168);
+  }
+  
+  .badge.filled.green {
+    background-color: #63d4c3;
+  }
+  .badge.filled.gray {
+    background-color: lightgray;
+  }
+  
+  .badge.outline {
+    border: 2px solid;
+    background-color: transparent;
+  }
+  
+  .badge.outline.red {
+    border-color: #d91a2a;
+    color: #d91a2a;
+  }
+
+  .badge.red.bg.gray {
+    font-size: 14px;
+    color: #d91a2a;
+    background-color: lightgray;
+    font-weight: bold;
+  }
+  .badge.long.red.bg.gray {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  .hover-description {
+  visibility: hidden;
+  opacity: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+  padding: 8px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: 120%; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 300px; /* Adjust as needed */
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.badge.long.red.bg.gray:hover .hover-description {
+  visibility: visible;
+  opacity: 1;
+}
+
+  .icon {
+    margin-right: 8px;
+  }
+
+ /*badges end*/
+
+ .first-row {
+     display: flex;
+     flex-wrap: wrap; /* Allow wrapping */
+    /* padding-top: 25px; */
+  }
+
+  .first-row-first-column{
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+
+  .first-row-second-column{
+    padding-left:80px;
+    /* width:250px; */
+    /* padding-top: 100px; */
+    /* margin-top: 50px; */
+  }
+
+.fr-sc-bottom-borders{
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 25px;
+}
+
+.fr-sc-button {
+  background-color: #1179e9; /* Blue color */
+  color: white;              /* White text */
+  padding: 10px 55px;        /* Padding for the button */
+  border: none;              /* No border */
+  border-radius: 5px;        /* Slightly rounded corners */
+  font-size: 24px;           /* Font size */
+  cursor: pointer;           /* Pointer cursor on hover */
+  text-align: center;        /* Center text */
+  width:300px;
+}
+
+.fr-sc-button:hover {
+  background-color: #3c94f1; /* Darker blue on hover */
+}
+
+.fr-sc-button-subheading{
+  text-align: center;        /* Center text */
+  width:280px;
+  padding-left: 10px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .first-row {
+      flex-direction: column; /* Stack columns vertically */
+      align-items: center; /* Center content horizontally */
+  }
+
+  .first-row-second-column {
+      padding-left: 0; /* Remove left padding for a cleaner layout */
+      margin-top: 20px; /* Add some space above the second column */
+  }
+}
+
+/* .center-div{
+  align-items: center; /* Align items vertically in the center */
+         /*padding-top: 80px; */
+        /* position: relative; */ 
+                  /* Create a positioning context */
+        /* text-align: center; */
+                  /* Center content inside */
+        /* display: flex;          */
+                  /* Use flexbox for alignment */
+        /* justify-content: center; */
+/* }  */
+
+.investment-info{
+  font-style: italic;
+  align-items: center;
+  text-decoration: none;
+}
+
+.not-underlined-a-tag{
+  text-decoration: none;
+  color:#1373da
+}
+
+/* home page summary start */
+.home-page-summary{
+  padding-left: 190px;
+  padding-top: 35px;
+  width: 720px;
+}
+
+.home-page-summary-heading{
+  font-size: 30px;
+ color: gray;
+ padding-bottom: 27px;
+}
+.home-page-summary-paragraph{
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.investment-summary-li{
+  font-size: 20px;
+  color:#000000;
+}
+.investment-summary-li::marker {
+  color: gray;
+}
+.home-page-disclaimer-paragraph{
+  font-size: 20px;
+  font-family:'Times New Roman', Times, serif;
+  justify-content: center;
+}
+
+/* home page summary end */
+
+/* hr line start */
+.simple-gray-line {
+  border: none;
+  border-top: 1px solid lightgray;
+  /* margin-left: 190px; */
+   /* Adds the left offset */
+  width: calc(100% - 190px); /* Adjusts the width to accommodate the margin */
+  margin-top: 50px;
+  margin-bottom: 40px;
+  justify-content: center;
+  margin-left: 190px;
+}
+/*  hr line end*/
+
+/* invest input tab start */
+.investing-tab-container {
+  position: relative;
+  padding-right: 60px;
+  display: inline-block;
+  width: 150px; /* Adjust the width as needed */
+}
+
+.investing-tab-input {
+  /* width: 100%; */
+  width:160px;
+  height:50px;
+  padding-left: 60px; /* Space for the dollar sign */
+  padding: 10px;
+  border: 1px solid blue; /* Blue outline */
+  border-radius: 5px; /* Rounded corners */
+  box-sizing: border-box;
+}
+
+.dollar-sign {
+  position: absolute;
+  left: 110px; /* Adjust position as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  color: blue; /* Color of the dollar sign */
+  font-size: 24px; /* Font size of the dollar sign */
+}
+
+/* invest impt tab end */
+
+
+/* second-long-button start */
+
+.div-for-center {
+  position: relative;
+   /* Create a positioning context */
+  text-align: center;
+   /* Center content inside */
+  display: flex;         
+      /* Use flexbox for alignment */
+  justify-content: center;
+    /* Center horizontally */
+  /* align-items: center;     */
+    /* Center vertically (if needed) */
+}
+.second-long-button {
+  background-color: #1179e9; /* Blue color */
+  color: white;              /* White text */
+  padding: 9px;        /* Padding for the button */
+  border: none;              /* No border */
+  border-radius: 5px;        /* Slightly rounded corners */
+  font-size: 27px;           /* Font size */
+  cursor: pointer;           /* Pointer cursor on hover */
+  text-align: center;        /* Center text */
+  width:490px;
+  /* left: 50%;
+  transform: translateX(-50%); */
+}
+
+.second-long-button:hover {
+  background-color: #3c94f1; /* Darker blue on hover */
+}
+
+/* second-long-button end */
+
+.full-size-video {
+  width: 720;
+  height: 420; /* Maintains aspect ratio */
+  display: block; /* Removes extra margins */
+  max-width: 100%; /* Ensures it does not overflow its container */
+}
+
+/* about-Avawatz start*/
+.About-Avawatz{
+  margin: 0 auto; /* Centers the entire container if needed */
+  max-width: 1200px; /* Optional: limit the container width */
+  /* padding-left: 190px; */
+  justify-content: center;
+  position: relative; /* Create a positioning context for the heading */
+}
+
+.aa-main-heading{
+  font-size: 32px;
+  text-align: center;/*little work in centering*/
+  text-decoration: underline;
+  position: relative;
+  margin: 0 auto; /* Centers the heading */
+  position: absolute;/*no work in centering*/
+  
+  left: 50%;/*both-together centers in all screen */
+  transform: translateX(-50%); /*both-together centers in all screen */
+
+  /* Ensure the text remains centered */
+  /* width: 100%;  */
+}
+
+.aa-headings{
+  font-size: 21px; 
+  color: gray;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.aa-sub-headings{
+  font-weight: normal;
+  margin-top: 5px;
+  font-size: 21px; 
+}
+
+.aa-columns {
+  display: flex;
+  justify-content: space-between; /* Space between columns */
+  gap: 20px; /* Adjust the gap between columns */
+}
+
+.aa-column {
+  flex: 1; /* Make columns equally wide */
+}
+
+/* about-Avawatz end*/
+
+
+/* map container start */
+
+.map-container {
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+  margin: 0 auto;  /* Center horizontally */
+  padding: 20px;   /* Add some padding */
+}
+
+.map-iframe {
+  width: 100%;
+  height: 185px;
+  /* width: 400px; */
+  height: 100%;
+  border: 0;
+}
+
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+  .map-iframe {
+    width: 150px; /* Adjust the height for small screens */
+  }
+}
+
+/* Media query for screens smaller than 400px */
+@media (max-width: 400px) {
+  .map-iframe {
+    width: 150px; /* Further reduce the height for very small screens */
+  }
+}
+/* map container end */
+
+
+/* .center-div{
+  align-items: center; /* Align items vertically in the center */
+         /*padding-top: 80px; */
+        /* position: relative; */ 
+                  /* Create a positioning context */
+        /* text-align: center; */
+                  /* Center content inside */
+        /* display: flex;          */
+                  /* Use flexbox for alignment */
+        /* justify-content: center; */
+/* }  */
+
+
+/* Avawatz-team start*/
+.avawatz-team{
+  margin: 0 auto; /* Centers the entire container if needed */
+  max-width: 1200px; /* Optional: limit the container width */
+  /* padding-left: 190px; */
+  position: relative; /* Create a positioning context for the heading */
+  justify-content: center;
+}
+
+.at-columns {
+  display: flex;              /* Display columns in a row */
+  gap: 20px;                  /* Add space between columns */
+  flex-wrap: wrap;            /* Allow wrapping for smaller screens */
+}
+
+.at-column {
+  flex: 1;                    /* Allow columns to grow equally */
+  max-width: 300px;           /* Set a max-width for each column */
+  text-align: center;         /* Center text */
+  border-radius: 15px;        /* Round corners */
+  padding: 20px;              /* Add padding inside columns */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better appearance */
+}
+
+.profile-image {
+  border-radius: 50%;         /* Make image circular */
+  width: 110px;               /* Fixed width */
+  height: 110px;              /* Fixed height */
+  object-fit: cover;          /* Ensure the image covers the area without distortion */
+}
+
+.at-name {
+  font-weight: normal;
+  margin-bottom: 5px;
+  font-size: 21px; 
+}
+
+.at-position {
+  font-size: 21px; 
+  color: gray;
+  font-weight: normal;
+  margin-top: 5px;  
+}
+
+
+
+/* avawatz big heading and bold button start */
+
+.last-container {
+  align-items: center; /* Align items vertically in the center */
+  padding-top: 80px;
+  position: relative;
+   /* Create a positioning context */
+  text-align: center;
+   /* Center content inside */
+  display: flex;         
+      /* Use flexbox for alignment */
+  justify-content: center;
+}
+.big-icon {
+  margin-right: 10px; /* Add some space between the image and the heading */
+}
+.avawatz-big-heading {
+  font-size: 3.5rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif Haettenschweiler,  sans-serif ;
+  margin: 0; /* Remove default margin for the heading */
+}
+
+.bold-button-container{
+  align-items: center; /* Align items vertically in the center */
+  /* padding-top: 80px; */
+  position: relative;
+   /* Create a positioning context */
+  text-align: center;
+   /* Center content inside */
+  display: flex;         
+      /* Use flexbox for alignment */
+  justify-content: center;
+
+}
+.bold-button {
+  background-color: #1179e9; /* Blue color */
+  color: white;              /* White text */
+  padding: 19px;        /* Padding for the button */
+  border: none;              /* No border */
+  border-radius: 5px;        /* Slightly rounded corners */
+  font-size: 28px;           /* Font size */
+  cursor: pointer;           /* Pointer cursor on hover */
+  text-align: center;        /* Center text */
+  width:320px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+.bold-button:hover {
+  background-color: #3c94f1; /* Darker blue on hover */
+}
+/* avawatz big heading, bold button end */
+
